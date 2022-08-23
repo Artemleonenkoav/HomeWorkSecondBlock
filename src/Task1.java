@@ -1,13 +1,14 @@
 // + Используя IDEA, создайте проект c пакетом.
-// + Требуется: Создать класс Address.В теле класса требуется создать поля: index, country, city,
-// + street, house, apartment.
-// + Для каждого поля, создать метод с двумя методами доступа (get, set)
-// + Создать экземпляр класса Address.
-// + В поля экземпляра записать информацию о почтовом адресе.
-// + Выведите на экран значения полей, описывающих адрес.
+//// + Требуется: Создать класс Address.В теле класса требуется создать поля: index, country, city,
+//// + street, house, apartment.
+//// + Для каждого поля, создать метод с двумя методами доступа (get, set)
+//// + Создать экземпляр класса Address.
+//// + В поля экземпляра записать информацию о почтовом адресе.
+//// + Выведите на экран значения полей, описывающих адрес.
 
 
 public class Task1 {
+
     private int index;
     private String country;
     private String city;
@@ -20,8 +21,7 @@ public class Task1 {
     }
 
     public Task1(int index, String country, String city, String street, int house, String apartment) {
-        this.index = 50;
-
+        this.index = index;
         this.country = country;
         this.city = city;
         this.street = street;
@@ -30,6 +30,7 @@ public class Task1 {
 
     }
 
+
     public int getIndex() {
         return index;
     }
@@ -37,6 +38,7 @@ public class Task1 {
     public void setIndex(int index) {
         this.index = index;
     }
+
 
     public String getCountry() {
         return country;
@@ -92,7 +94,8 @@ public class Task1 {
         System.out.println("Your city is " + addresscity);
         System.out.println("Your street is " + addressstreet);
         System.out.println("Your number house is " + addresshouse);
-        System.out.println("Your apartamant is " + addressapartamant);
+        System.out.println("Your apartament is " + addressapartamant);
 
     }
 }
+
