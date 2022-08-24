@@ -4,8 +4,8 @@
 // + Создать класс Main в котором создать экземпляры вызывая разные конструкторы.
 
 public  class Task1 {
-    int year;
-    String color;
+    private int year;
+    private String color;
 
     public Task1() {
     }
