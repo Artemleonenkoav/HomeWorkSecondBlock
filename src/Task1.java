@@ -3,23 +3,26 @@
 // + конструктор с одним и 2-я параметрами.
 // + Создать класс Main в котором создать экземпляры вызывая разные конструкторы.
 
-public  class Task1 {
-    private int year;
-    private String color;
+public class Task1 {
+    public static class Car {
 
-    public Task1() {
-    }
 
-    public Task1(int year) {
-    }
+        private int year;
+        private String color;
 
-    public Task1(int year, String color) {
+        public Car() {
+        }
+
+        public Car(int year) {
+        }
+
+        public Car(int year, String color) {
+        }
     }
 
     public static void main(String[] args) {
-        Task1 first = new Task1(50);
-        Task1 two = new Task1(50, "Red");
-
+        Car first = new Car(50, "red");
+        Car two = new Car(50, "Red");
     }
 }
 

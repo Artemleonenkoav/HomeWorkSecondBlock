@@ -4,32 +4,35 @@
 //Создать класс Main, в котором создать экземляры класса Машина с разными параметрами.
 
 public class Task2 {
+
+    public class Car{
+
     int year;
     double speed;
     int weight;
     String color;
 
-    public Task2() {
+    public Car() {
     }
 
-    public Task2(int year) {
-
-    }
-
-    public Task2(int year, double speed) {
+    public Car(int year) {
 
     }
 
-    public Task2(int year, double speed, int weight) {
+    public Car(int year, double speed) {
+
+    }
+
+    public Car(int year, double speed, int weight) {
     }
 
 
-    public Task2(int year, int speed, int weight, String color) {
+    public Car(int year, int speed, int weight, String color) {
     }
-
+    }
     public static void main(String[] args) {
-        Task1 first = new Task1(50);
-        Task1 two = new Task1(50, "Red");
+        Car first = new Car(50);
+        Car two = new Car(50, "Red");
 
     }
 }
