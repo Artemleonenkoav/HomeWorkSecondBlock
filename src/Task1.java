@@ -5,8 +5,6 @@
 
 public class Task1 {
     public static class Car {
-
-
         private int year;
         private String color;
 
