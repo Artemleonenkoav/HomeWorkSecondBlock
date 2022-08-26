@@ -30,6 +30,5 @@ public class Pupil {
     public class BadPupil extends Pupil {
     }
 
-
 }
 
