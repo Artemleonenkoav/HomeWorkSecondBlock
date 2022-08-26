@@ -19,8 +19,7 @@ public class Pupil {
     }
 
 
-
-//    BaseClass up = new DerivedClass();
+    //    BaseClass up = new DerivedClass();
     class ExcelentPupil extends Pupil {
 
     }
