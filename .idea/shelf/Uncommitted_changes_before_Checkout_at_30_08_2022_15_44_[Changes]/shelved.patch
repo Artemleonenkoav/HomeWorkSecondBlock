@@ -1,0 +1,16 @@
+Index: src/Task1/Pupil.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Task1;\r\n\r\npublic class Pupil {\r\n\r\n\r\n    public static Pupil BadPupil = new BadPupil();\r\n    public static Pupil GoodPupil = new GoodPupil();\r\n    public static Pupil ExcelentPupil = new ExcelentPupil();\r\n\r\n\r\n    public void study() {\r\n\r\n    }\r\n\r\n\r\n    public void read() {\r\n    }\r\n\r\n\r\n    public void write() {\r\n    }\r\n\r\n\r\n    public void relax() {\r\n        System.out.println(\"Relax\");\r\n    }\r\n\r\n\r\n    //    BaseClass up = new DerivedClass();\r\n    static class ExcelentPupil extends Pupil {\r\n        public ExcelentPupil() {\r\n            run();\r\n        }\r\n\r\n        public void run() {\r\n            study();\r\n            write();\r\n            read();\r\n            relax();\r\n        }\r\n\r\n        @Override\r\n        public void study() {\r\n            System.out.println(\"Excelent\");\r\n        }\r\n\r\n        @Override\r\n        public void read() {\r\n            System.out.println(\"Excelent\");\r\n        }\r\n\r\n        @Override\r\n        public void write() {\r\n            System.out.println(\"Excelent\");\r\n        }\r\n\r\n        @Override\r\n        public void relax() {\r\n            System.out.println(\"Excelent\");\r\n        }\r\n    }\r\n\r\n    public static class GoodPupil extends Pupil {\r\n\r\n        public GoodPupil() {\r\n            run();\r\n        }\r\n\r\n        public void run() {\r\n            study();\r\n            write();\r\n            read();\r\n            relax();\r\n        }\r\n\r\n        @Override\r\n        public void study() {\r\n            System.out.println(\"Good\");\r\n        }\r\n\r\n        @Override\r\n        public void read() {\r\n            System.out.println(\"Good\");\r\n        }\r\n\r\n        @Override\r\n        public void write() {\r\n            System.out.println(\"Good\");\r\n        }\r\n\r\n        @Override\r\n        public void relax() {\r\n            System.out.println(\"Good\");\r\n        }\r\n    }\r\n\r\n    public static class BadPupil extends Pupil {\r\n\r\n        public BadPupil() {\r\n            run();\r\n        }\r\n\r\n        public void run() {\r\n            study();\r\n            write();\r\n            read();\r\n            relax();\r\n        }\r\n\r\n        @Override\r\n        public void study() {\r\n            System.out.println(\"Bad\");\r\n        }\r\n\r\n        @Override\r\n        public void read() {\r\n            System.out.println(\"Bad\");\r\n        }\r\n\r\n        @Override\r\n        public void write() {\r\n            System.out.println(\"Bad\");\r\n        }\r\n\r\n        @Override\r\n        public void relax() {\r\n            System.out.println(\"Bad\");\r\n        }\r\n    }\r\n\r\n}\r\n\r\n
+===================================================================
+diff --git a/src/Task1/Pupil.java b/src/Task1/Pupil.java
+--- a/src/Task1/Pupil.java	
++++ b/src/Task1/Pupil.java	
+@@ -8,6 +8,7 @@
+     public static Pupil ExcelentPupil = new ExcelentPupil();
+ 
+ 
++
+     public void study() {
+ 
+     }
