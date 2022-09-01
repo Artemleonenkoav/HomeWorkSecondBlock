@@ -13,7 +13,6 @@ import java.util.Scanner;
 
 public class Worker {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
         int personCount = 5;
         String[] person = new String[personCount];
@@ -29,7 +28,7 @@ public class Worker {
                 workerPerson[i] = scanner.nextInt();
             }
         } catch (Exception e) {
-            System.out.println("STOOOP , you need write number, it's not  work  ");
+            System.err.println("STOOOP , you need write number, it's not  work  ");
         }
         System.out.println(Arrays.toString(person));
         System.out.println(Arrays.toString(workerPerson));
