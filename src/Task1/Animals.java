@@ -5,8 +5,10 @@
 package Task1;
 
 enum Animals {
+
     DOG(50), CAT(30), TIGER(55);
-    int age;
+
+    private int age;
 
     Animals(int age) {
         this.age = age;
@@ -19,7 +21,9 @@ enum Animals {
         System.out.println("Age animal is " + animals.age);
         System.out.println("Age animal is " + animalse.age);
         System.out.println("Age animal is " + animalss.age);
+
     }
+
 
     @Override
     public String toString() {
