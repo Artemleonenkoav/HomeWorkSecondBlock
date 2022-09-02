@@ -24,10 +24,11 @@ enum Animals {
 
     }
 
-
     @Override
     public String toString() {
-        return super.toString();
+        return "Animals{" +
+                "age=" + age +
+                '}';
     }
 }
 
